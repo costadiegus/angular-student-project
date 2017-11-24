@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
@@ -17,6 +17,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     DataBindingComponent
   ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     CursosModule
   ],
