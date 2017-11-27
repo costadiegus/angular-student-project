@@ -10,6 +10,9 @@ export class DataBindingComponent implements OnInit {
   url: string = 'http://loiane.training';
   cursoAngular: boolean = true;
   urlImagem: string = 'https://angular.io/assets/images/logos/angular/angular_solidBlack.svg';
+  valorAtual: string = '';
+  valorSalvo: string = '';
+  isMouseOver: boolean = false;
 
   getValor(){
     return 1;
@@ -19,6 +22,21 @@ export class DataBindingComponent implements OnInit {
     return true;
   }
 
+  botaoClicado(){
+    alert('Botão clicado!');
+  }
+
+  salvarValor(valor){
+    this.valorSalvo = valor;
+  }
+
+  onKeyUp(evento: KeyboardEvent) {
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
+  }
+
+  onMouseOverOut(){
+    this.isMouseOver = !this.isMouseOver;
+  }
   constructor() { }
 
   ngOnInit() {
