@@ -1,6 +1,34 @@
 <section class="property-binding">
-  
-  <article>
+
+  <app-meu-form></app-meu-form>
+
+  <!-- <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text"
+      [value]="nome"
+      (input)="nome = $event.target.value"
+      />
+      
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+      />
+
+      <input type="text" [(ngModel)]="nome">
+
+      <input type="text" bindon-ngModel="nome">
+
+      <p>Você digitou {{ nome }}</p>
+    </div>
+    <div>
+      <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.</p>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+    </div>
+  </article> -->
+
+  <!-- <article>
     <h3>Event Binding</h3>
     <div>
       <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button>
@@ -13,7 +41,7 @@
       <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()"
         [class.highlight]="isMouseOver">Passe o mouse sobre mim</span>
     </div>
-  </article>
+  </article> -->
 
 
   <!-- <article>
