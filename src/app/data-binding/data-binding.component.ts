@@ -7,38 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  url: string = 'http://loiane.training';
-  cursoAngular: boolean = true;
-  urlImagem: string = 'https://angular.io/assets/images/logos/angular/angular_solidBlack.svg';
-  valorAtual: string = '';
-  valorSalvo: string = '';
-  isMouseOver: boolean = false;
-  nome: string = 'abc';
-  nomeDoCurso: string = 'Angular';
-  valorInicial: number = 15;
-
-  onMudouValor(evento){
-    console.log(evento.novoValor);
-  }
-
   pessoa: any = {
     nome: 'def',
     idade: 30
-  } 
+  };
 
-  getValor(){
+  url = 'http://loiane.training';
+  cursoAngular = true;
+  urlImagem = 'https://angular.io/assets/images/logos/angular/angular_solidBlack.svg';
+  valorAtual = '';
+  valorSalvo = '';
+  isMouseOver = false;
+  nome = 'abc';
+  nomeDoCurso = 'Angular';
+  valorInicial = 15;
+
+  onMudouValor(evento) {
+    console.log(evento.novoValor);
+  }
+
+  getValor() {
     return 1;
   }
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
   }
 
-  botaoClicado(){
+  botaoClicado() {
     alert('Botão clicado!');
   }
 
-  salvarValor(valor){
+  salvarValor(valor) {
     this.valorSalvo = valor;
   }
 
@@ -46,7 +46,7 @@ export class DataBindingComponent implements OnInit {
     this.valorAtual = (<HTMLInputElement>evento.target).value;
   }
 
-  onMouseOverOut(){
+  onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
   }
   constructor() { }

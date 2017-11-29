@@ -1,23 +1,25 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'contador',
+  selector: 'app-contador',
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.css']
-  //, outputs: ['mudouValor']
+  // , outputs: ['mudouValor']
 })
 export class OutputPropertyComponent implements OnInit {
 
-  @Input() valor: number = 10;
+  @Input() valor = 10;
 
   @Output() mudouValor = new EventEmitter();
 
-  incrementa(){
+  incrementa() {
     this.valor++;
     this.mudouValor.emit({novoValor: this.valor});
   }
-  decrementa(){
-    this.valor > 0 ? this.valor--: this.valor;
+  decrementa() {
+    if (this.valor > 0) {
+      this.valor--;
+    }
     this.mudouValor.emit({novoValor: this.valor});
   }
   constructor() { }

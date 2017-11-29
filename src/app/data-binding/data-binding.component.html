@@ -2,11 +2,11 @@
 
   <article>
     <h3>Input/Output Properties</h3>
-    <app-curso [nome]="nomeDoCurso"></app-curso>
+    <app-curso [nomeCurso]="nomeDoCurso"></app-curso>
     <br/>
-    <contador valor=15></contador>
+    <app-contador valor=15></app-contador>
     <br/>
-    <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
+    <app-contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></app-contador>
   </article>
 
   <!--
