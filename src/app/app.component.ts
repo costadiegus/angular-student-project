@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Olá mundo';
+  // title = 'Olá mundo';
+
+  valor = 5;
+  deletarCiclo = false;
+
+  mudarValor() {
+    this.valor++;
+  }
+
+  destruirCiclo() {
+    this.deletarCiclo = true;
+  }
+
+  iniciarCiclo() {
+    this.deletarCiclo = false;
+  }
 }
