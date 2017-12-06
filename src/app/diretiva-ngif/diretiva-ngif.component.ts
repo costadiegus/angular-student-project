@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgifComponent implements OnInit {
 
+  cursos: string[] = ['Angular 5','ExtJS','React JS','Ionic'];
+
   constructor() { }
 
   ngOnInit() {
