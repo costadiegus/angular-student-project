@@ -1,6 +1,15 @@
 # MeuPrimeiro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This project was initially created with Angular 2.
+To update to Angular 7 we created a new with Angular CLI and copy ./src directory from the original project.
+After this we execute:
+- npm install
+- npm install @bootstrap (necessary delete 'ngx-bootstrap' references in code)
+
+To the Angular 8 it was only necessary execute the commands:
+- ng update @angular/core
+- ng update @angular/cli@latest
 
 ## Development server
 
